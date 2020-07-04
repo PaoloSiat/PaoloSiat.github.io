@@ -1,0 +1,48 @@
+#portfolio {
+  background-color: #BFD56B;
+
+  #portfolio-selector {
+    margin: 0 auto;
+
+    width: 90vw;
+
+    h1 {
+      display: inline-block;
+
+      margin: 0 0 0.5rem 0;
+
+      font-family: 'Staatliches', Arial, sans-serif;
+      color: #495551;
+      font-weight: 400;
+    }
+
+    button  {
+      padding: 0 0 0 0.5rem;
+
+      font-family: 'Staatliches', Arial, sans-serif;
+      color: #495551;
+      font-size: 2rem;
+      font-weight: 400;
+      text-decoration: underline;
+      background: none;
+      border: none;
+      outline: none;
+
+      transition: color 0.2s ease, text-decoration-color 0.2s ease;
+
+      &:hover {
+        color: #feb312;
+        text-decoration-color: #feb312 !important;
+        
+        cursor: pointer;
+      }
+    }
+  }
+
+  #portfolio-content {
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+
+    width: 90vw;
+  }
+}
