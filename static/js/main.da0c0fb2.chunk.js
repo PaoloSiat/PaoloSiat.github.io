@@ -1,2 +1,0 @@
-(this.webpackJsonppaolosiat=this.webpackJsonppaolosiat||[]).push([[0],{3:function(t,n,e){t.exports=e(4)},4:function(t,n,e){"use strict";e.r(n);var o=e(0),a=e.n(o),s=e(2),p=e.n(s);e(9);p.a.render(a.a.createElement("p",null,"yo"),document.getElementById("root"))},9:function(t,n,e){}},[[3,1,2]]]);
-//# sourceMappingURL=main.da0c0fb2.chunk.js.map
