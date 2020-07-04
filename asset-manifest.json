@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/paolosiat/static/css/main.fb05c4ad.chunk.css",
-    "main.js": "/paolosiat/static/js/main.d62d0243.chunk.js",
-    "main.js.map": "/paolosiat/static/js/main.d62d0243.chunk.js.map",
+    "main.js": "/paolosiat/static/js/main.1806622b.chunk.js",
+    "main.js.map": "/paolosiat/static/js/main.1806622b.chunk.js.map",
     "runtime-main.js": "/paolosiat/static/js/runtime-main.26850289.js",
     "runtime-main.js.map": "/paolosiat/static/js/runtime-main.26850289.js.map",
     "static/js/2.3ead65f3.chunk.js": "/paolosiat/static/js/2.3ead65f3.chunk.js",
     "static/js/2.3ead65f3.chunk.js.map": "/paolosiat/static/js/2.3ead65f3.chunk.js.map",
     "index.html": "/paolosiat/index.html",
-    "precache-manifest.c9f313195d1572297af0c94fd0ca3bc7.js": "/paolosiat/precache-manifest.c9f313195d1572297af0c94fd0ca3bc7.js",
+    "precache-manifest.b1974bb01e31774db5224167d8de5401.js": "/paolosiat/precache-manifest.b1974bb01e31774db5224167d8de5401.js",
     "service-worker.js": "/paolosiat/service-worker.js",
     "static/css/main.fb05c4ad.chunk.css.map": "/paolosiat/static/css/main.fb05c4ad.chunk.css.map",
     "static/js/2.3ead65f3.chunk.js.LICENSE.txt": "/paolosiat/static/js/2.3ead65f3.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.26850289.js",
     "static/js/2.3ead65f3.chunk.js",
     "static/css/main.fb05c4ad.chunk.css",
-    "static/js/main.d62d0243.chunk.js"
+    "static/js/main.1806622b.chunk.js"
   ]
 }
