@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "name": "digital-designs",
+      "images": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png"
+      ]
+    },
+    {
+      "name": "digital-painting",
+      "images": [
+      ]
+    },
+    {
+      "name": "print",
+      "images": [
+      ]
+    },
+    {
+      "name": "traditional-art",
+      "images": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png"
+      ]
+    },
+    {
+      "name": "others",
+      "images": [
+        "1.jpg",
+        "2.jpeg",
+        "3.jpg"
+      ]
+    }
+  ]
+}

@@ -43,3 +43,11 @@
     width: 90vw;
   }
 }
+
+@media (hover: none) {
+  #work-experience-toggle {
+    button {
+      color: #ffffff !important;
+    }
+  }
+}

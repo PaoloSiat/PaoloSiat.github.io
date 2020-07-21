@@ -8,7 +8,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 50rem;
+  background-size: 43rem;
   background-position-y: center;
 
   &:hover {
@@ -18,7 +18,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 50rem;
+    background-size: 43rem;
     background-position-y: center;
   }
 
@@ -45,5 +45,18 @@
       font-size: 2rem;
       font-weight: 300;
     }
+  }
+}
+
+@media (hover: none) {
+  #header:hover {
+    background: url(../images/villain.png) no-repeat center fixed;
+    background-color: #167171;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 43rem;
+    background-position-y: center;
   }
 }

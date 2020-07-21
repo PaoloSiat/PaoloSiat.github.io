@@ -44,5 +44,25 @@
     padding-bottom: 1.5rem;
 
     width: 90vw;
+
+    div {
+      .portfolio-container {
+        height: 30rem;
+      }
+    }
+
+    .portfolio-items {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (hover: none) {
+  #portfolio-selector {
+    button {
+      color: #495551 !important;
+    }
   }
 }

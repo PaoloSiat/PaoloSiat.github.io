@@ -41,9 +41,7 @@ export default class Contact extends Component<ContactProps, ContactState> {
       <div id='contact'>
         <div id='contact-information'>
           <h1>CONTACT INFORMATION</h1>
-          <p><strong>John Paolo Siat</strong><br />Multimedia Artist</p>
-          <p>30 Highwoodlane, Burnside<br />
-            Christchurch, New Zealand 8053<br />
+          <p><strong>John Paolo Siat</strong><br />Multimedia Artist<br />
             Phone: <span className='dark'>+64291269475</span><br />
             E-mail: <span className='dark'>paolosiat@gmail.com</span></p>
           <div id='social-media-icons'>

@@ -33,3 +33,13 @@
     }
   }
 }
+
+@media (hover: none) {
+  #navigation-bar {
+    ul {
+      li {
+        color: #2b303b !important;
+      }
+    }
+  }
+}

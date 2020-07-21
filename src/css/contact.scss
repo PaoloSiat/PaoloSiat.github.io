@@ -77,6 +77,12 @@
 
     a {
       margin-right: 1rem;
+
+      i:hover {
+        color: #feb312;
+
+        transition: color 0.2s ease-in-out;
+      }
     }
   }
 
@@ -106,6 +112,9 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
     border: none;
     border-radius: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
     
     cursor: pointer;
 

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import Markdown from 'markdown-to-jsx';
 
 
 interface WorkExperienceProps {}
 interface WorkExperienceState {
   visible: boolean;
+  content: string;
 }
 
 export default class WorkExperience extends Component<WorkExperienceProps, WorkExperienceState> {
@@ -11,9 +13,24 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
     super(props);
 
     this.state = {
-      visible: false
+      visible: false,
+      content: ''
     };
   }
+
+  componentDidMount(): void {
+    let loadFile = async (file: string) => {
+      let response = await fetch(`/${file.trim()}`);
+      
+      return response.text();
+    }
+
+    loadFile('work-experience.md').then(data => {
+      this.setState({ content: data });
+    });
+  }
+
+  
 
   toggleWorkExperience(): void {
     this.setState({ visible: !this.state.visible }, () => {
@@ -32,7 +49,7 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
           <button className='unselectable' onClick={() => this.toggleWorkExperience()}>{this.state.visible ? '▲' : '▼'}</button>
         </div>
         <div id='work-experience-content' style={{ display: 'none' }}>
-          WORK EXPERIENCE CONTENT
+          <Markdown>{this.state.content}</Markdown>
         </div>
       </div>
     );
