@@ -30,8 +30,6 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
     });
   }
 
-  
-
   toggleWorkExperience(): void {
     this.setState({ visible: !this.state.visible }, () => {
       let workExperienceContent = document.getElementById('work-experience-content');

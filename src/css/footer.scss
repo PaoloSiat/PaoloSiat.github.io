@@ -2,11 +2,24 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 1rem;
+  padding: 1rem 0;
   
   background-color: #167171;
 
-  #back-to-top:hover {
-    cursor: pointer;
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    width: 90vw;
+
+    #back-to-top {
+      width: 10rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }

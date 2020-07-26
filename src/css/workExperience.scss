@@ -41,6 +41,24 @@
     margin: 0 auto;
 
     width: 90vw;
+
+    h3 {
+      margin-top: 1rem;
+      font-weight: 700;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding: 0;
+
+      max-width: 45%;
+    }
+
+    p {
+      margin: 0;
+
+      max-width: 45%;
+    }
   }
 }
 

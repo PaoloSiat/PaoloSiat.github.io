@@ -9,8 +9,10 @@ export default class Footer extends Component<FooterProps, FooterState> {
   render(): JSX.Element {
     return (
       <div id='footer' className='unselectable'>
-        <div>© 2020 Paolo Siat. All rights reserved</div>
-        <div id='back-to-top' onClick={() => scrollToContentLocation(0, 0)}>▲ Back to Top</div>
+        <div>
+          <div>© 2020 Paolo Siat. All rights reserved</div>
+          <div id='back-to-top' onClick={() => scrollToContentLocation(0, 0)}>▲ Back to Top</div>
+        </div>
       </div>
     );
   }

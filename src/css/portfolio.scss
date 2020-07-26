@@ -1,40 +1,55 @@
+@import 'mixins.scss';
+
+
 #portfolio {
   background-color: #BFD56B;
 
   #portfolio-selector {
+    display: flex;
+    flex-direction: column;
+
     margin: 0 auto;
+    padding-top: 1.5rem;
 
     width: 90vw;
 
     h1 {
       display: inline-block;
 
-      margin: 0 0 0.5rem 0;
+      margin: 0;
 
       font-family: 'Staatliches', Arial, sans-serif;
       color: #495551;
       font-weight: 400;
     }
 
-    button  {
-      padding: 0 0 0 0.5rem;
+    #portfolio-buttons {
+      margin: 0 0 0.5rem 0;
 
-      font-family: 'Staatliches', Arial, sans-serif;
-      color: #495551;
-      font-size: 2rem;
-      font-weight: 400;
-      text-decoration: underline;
-      background: none;
-      border: none;
-      outline: none;
+      button  {
+        padding: 0 0 0 0.5rem;
+  
+        font-family: 'Staatliches', Arial, sans-serif;
+        color: #495551;
+        font-size: 2rem;
+        font-weight: 400;
+        text-decoration: underline;
+        background: none;
+        border: none;
+        outline: none;
+  
+        transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  
+        &:hover {
+          color: #feb312;
+          text-decoration-color: #feb312 !important;
+          
+          cursor: pointer;
+        }
 
-      transition: color 0.2s ease, text-decoration-color 0.2s ease;
-
-      &:hover {
-        color: #feb312;
-        text-decoration-color: #feb312 !important;
-        
-        cursor: pointer;
+        &:first-child {
+          padding: 0;
+        }
       }
     }
   }
@@ -45,16 +60,39 @@
 
     width: 90vw;
 
-    div {
-      .portfolio-container {
-        height: 30rem;
-      }
+    border-left: 1px #167171 solid;
+    border-right: 1px #167171 solid;
+    border-top: 1px #167171 solid;
+    
+    .portfolio-container {
+      display: flex;
+      
+      align-items: center;
+
+      height: 100%;
+    }
+
+    .react-multi-carousel-track  {
+      display: flex;
+      align-items: center;
     }
 
     .portfolio-items {
-      img {
-        max-width: 100%;
-      }
+      margin: 0.5rem 0.5rem 2rem 0.5rem;
+    }
+
+    .portfolio-image {
+      cursor: pointer;
+    }
+
+    .portfolio-image-container {
+      padding: 0.5rem;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: #ffffff;
+      border-radius: 0.5rem;
     }
   }
 }
