@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a726c2f7078cba3f631f732c01ff2bb3",
+    "revision": "767eaf55b157c4e7002a08b37eb0ac04",
     "url": "/index.html"
   },
   {
-    "revision": "0eb947441c968dde48b9",
-    "url": "/static/css/2.4480f1cc.chunk.css"
+    "revision": "32cfe5b902318ad9175c",
+    "url": "/static/css/2.7df41cd5.chunk.css"
   },
   {
-    "revision": "79d90c73a59348ead326",
-    "url": "/static/css/main.6d4da505.chunk.css"
+    "revision": "05dde2f49f7b7c285864",
+    "url": "/static/css/main.7ce6a600.chunk.css"
   },
   {
-    "revision": "0eb947441c968dde48b9",
-    "url": "/static/js/2.5af2b170.chunk.js"
+    "revision": "32cfe5b902318ad9175c",
+    "url": "/static/js/2.a2bb18c5.chunk.js"
   },
   {
-    "revision": "0c052487c5b237cb6c52a2bf7cd452c7",
-    "url": "/static/js/2.5af2b170.chunk.js.LICENSE.txt"
+    "revision": "4d47ffde3dc69784e8e23fd910817ef8",
+    "url": "/static/js/2.a2bb18c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "79d90c73a59348ead326",
-    "url": "/static/js/main.f431e57e.chunk.js"
+    "revision": "05dde2f49f7b7c285864",
+    "url": "/static/js/main.7ad2fe60.chunk.js"
   },
   {
     "revision": "c17f2f48a82bda544f21",
@@ -92,23 +92,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/outline-icons.ef60a4f6.woff"
   },
   {
-    "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
-    "url": "/static/media/revicons.04eb8fc5.woff"
+    "revision": "a97fd0edc3b9822b9b1f79ac7963fbc4",
+    "url": "/static/media/villain.a97fd0ed.png"
   },
   {
-    "revision": "17629a5dfe0d3c3946cf401e1895f091",
-    "url": "/static/media/revicons.17629a5d.ttf"
-  },
-  {
-    "revision": "2feb69ccb596730c72920c6ba3e37ef8",
-    "url": "/static/media/revicons.2feb69cc.eot"
-  },
-  {
-    "revision": "2482b63822920ee54656e20c409a6159",
-    "url": "/static/media/villain.2482b638.png"
-  },
-  {
-    "revision": "031b293b36a919180ae3d7fd65b4ecd6",
-    "url": "/static/media/villainx.031b293b.png"
+    "revision": "666469132ea09fa19a3c33b52103add1",
+    "url": "/static/media/villainx.66646913.png"
   }
 ]);

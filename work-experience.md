@@ -1,15 +1,15 @@
 ### PROJECT DESIGN LEAD
 
-**December 2019 - February 2020**
+December 2019 - February 2020
 
-**Ara Institute of Canterbury - New Zealand**
+Ara Institute of Canterbury - New Zealand
 
 * **Managed and organized the art direction of the project.**
 
 Made sure that the team produced
 designs that corresponded with each other.
 
-* **Game design.**
+#### **Game design.**
 
 Created in-game characters, user interface and their animation sequences.
 
@@ -19,7 +19,7 @@ Tested the beta versions to look for possible in-game errors and measure game fu
 
 (defend.ara.ac.nz)
 
-* **Graphic design.**
+#### **Graphic design.**
 
 Created the look and feel of the characters that would represent the brand/products.
 
@@ -29,9 +29,9 @@ Produced Logos, posters, flyers, business cards, website and app design.
 
 ### SUPPORT COORDINATOR
 
-**August 2019 - Present**
+August 2019 - Present
 
-**Hohepa - New Zealand**
+Hohepa - New Zealand
 
 * **Enables people to reach their greatest level of independence.**
 
@@ -39,35 +39,35 @@ This involves work in the home (creating an environment in which service users c
 
 ### PUBLIC RELATIONS OFFICER
 
-**November 2014 - July 2019**
+November 2014 - July 2019
 
-**International Container Terminal Services Inc. - Phillippines**
+International Container Terminal Services Inc. - Phillippines
 
-* **Public Relations Officer (Superintendent)**
+#### **Public Relations Officer (Superintendent)**
 
 Responsible for maintaining the company’s image through different forms of media.
 
-* **Company representative for company exhibits and expos in different countries.**
+#### **Company representative for company exhibits and expos in different countries.**
 
 (Georgia, Japan, Indonesia, Iran, Pakistan, Malaysia)
 
-* **Graphic Designer**
+#### **Graphic Designer**
 
 * **Composes/edits various graphic designs as needed by the company**
 
 (brochures, logos, posters, photo manipulation, rendered 3d structures, giveaways, infographics, website design, etc.)
 
-* **Photographer**
+#### **Photographer**
 
 * **Produced photo content for the company’s daily newsletters, press releases and monthly magazine.**
 
 ### JUNIOR CREATOR
 
-**January 2013 - November 2014**
+January 2013 - November 2014
 
-**Museo Orlina - Phillippines**
+Museo Orlina - Phillippines
 
-* **Junior Curator**
+#### **Junior Curator**
 
 * **Was in charge of the safety and security of the Museum artworks.**
 * **Helped plan and develop events and art exhibits for the museum.**
@@ -77,38 +77,38 @@ Responsible for maintaining the company’s image through different forms of med
 * **Interacted with potential art buyers.**
 * **Assisted in the purchase of artworks, managed art orders, prepared sold artwork for shipment.**
 
-* **Photographer**
+#### **Photographer**
 
 * **Took pictures of events and artworks for catalogues and press releases.**
 
 ### CLINICAL NURSE
 
-**June 2013 - January 2013**
+June 2013 - January 2013
 
-**Health Metrics Inc. - Phillippines**
+Health Metrics Inc. - Phillippines
 
 **Supervised day-to-day activities of patient care; performed patient assessment techniques;  attends educational in-services. Performed Electrocardiogram, Spirometry and Audiometry tests.**
 
 ### AUTOCAD AND SKETCHUP OPERATOR
 
-**April 2013 - October 2013**
+April 2013 - October 2013
 
 * **Created, modified, and released 2D and 3D drawings under the direct supervision of a supervisor.**
 
 ### OPERATIONS MANAGER
 
-**June 2012 - February 2013**
+June 2012 - February 2013
 
-**Erehwon Artworld Corporation - Phillippines**
+Erehwon Artworld Corporation - Phillippines
 
 * **Ran the day-to-day operation of the Corporation.**
 * **Prepared program budgets, facilitated several programs and events around the company, controlled inventory, handled logistics and supervised employees.**
 
 ### PERSONAL TRAINER
 
-**February 2012 - June 2013**
+February 2012 - June 2013
 
-**Worked at Fitness First - Phillippines**
+Worked at Fitness First - Phillippines
 
 * **Gave exercise prescriptions and instructions to clients.**
 * **Motivated clients by setting goals and providing feedback and accountability.**
@@ -117,17 +117,17 @@ Responsible for maintaining the company’s image through different forms of med
 
 ### CALL CENTER AGENT
 
-**February 2012 - June 2013**
+February 2012 - June 2013
 
-**Worked at APAC Customer Service Inc. - Phillippines**
+Worked at APAC Customer Service Inc. - Phillippines
 
 * **Handled different Errors and Technical problems of Client Insurance in various American Pharmacies.**
 
 ### SWIMMING INSTRUCTOR
 
-**2016 - 2012**
+2016 - 2012
 
-**Self Employment - Phillippines**
+Self Employment - Phillippines
 
 * **Taught basic to advance swimming lessons to school-aged children and adults.**
 * **Prescribed weekly training programs that improve stroke execution and physical endurance.**
