@@ -1,3 +1,4 @@
+// Exported classes for easier access.
 export { default as Profile } from './profile';
 export { default as Contact } from './contact';
 export { default as Footer } from './footer';

@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 
 
+// The data that the Contact class manages.
 interface ContactProps {}
 interface ContactState {
   status: string;
 }
 
 export default class Contact extends Component<ContactProps, ContactState> {
+  // This function runs when the class is created.
   constructor(props: ContactProps) {
     super(props);
 
+    // Set default data.
     this.state = {
       status: ''
     };
 
+    // Bind the submit form event to the submit form function.
     this.submitForm = this.submitForm.bind(this);
   }
 
   submitForm(event: any): void {
+    // Process and send the data submitted to the website that sends the email.
     event.preventDefault();
     const form = event.target;
     const data = new FormData(form);
@@ -36,6 +41,7 @@ export default class Contact extends Component<ContactProps, ContactState> {
     xhr.send(data);
   }
 
+  // Rendering is done in HTML and returns what this class what actually look like on the screen.
   render(): JSX.Element {
     return (
       <div id='contact'>

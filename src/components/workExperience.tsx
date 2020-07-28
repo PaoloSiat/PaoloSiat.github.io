@@ -2,35 +2,43 @@ import React, { Component } from 'react';
 import Markdown from 'markdown-to-jsx';
 
 
+// The data that the Portfolio class manages.
 interface WorkExperienceProps {}
 interface WorkExperienceState {
   visible: boolean;
   content: string;
 }
 
+// Rendering is done in HTML and returns what this class what actually look like on the screen.
 export default class WorkExperience extends Component<WorkExperienceProps, WorkExperienceState> {
+  // This function runs when the class is created.
   constructor(props: WorkExperienceProps) {
     super(props);
 
+    // Set default data.
     this.state = {
       visible: false,
       content: ''
     };
   }
 
+  // This function runs when the class is added to the screen.
   componentDidMount(): void {
+    // Define a function that loads content out of a file and returns the text.
     let loadFile = async (file: string) => {
       let response = await fetch(`/${file.trim()}`);
       
       return response.text();
     }
 
+    // Load the file and set the content variable to contain that data.
     loadFile('work-experience.md').then(data => {
       this.setState({ content: data });
     });
   }
 
   toggleWorkExperience(): void {
+    // Toggle visibility of the work experience content.
     this.setState({ visible: !this.state.visible }, () => {
       let workExperienceContent = document.getElementById('work-experience-content');
 
@@ -39,6 +47,7 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
     });
   }
 
+  // Rendering is done in HTML and returns what this class what actually look like on the screen.
   render(): JSX.Element {
     return (
       <div id='work-experience'>

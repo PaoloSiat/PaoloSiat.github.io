@@ -1,3 +1,4 @@
+// Exported files for easier access.
 import './index.scss';
 
 import './bio.scss';

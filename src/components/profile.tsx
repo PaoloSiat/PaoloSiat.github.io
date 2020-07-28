@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 
+// The data that the Portfolio class manages.
 interface BioProps {}
 interface BioState {}
 
+// Rendering is done in HTML and returns what this class what actually look like on the screen.
 export default class Profile extends Component<BioProps, BioState> {
   render(): JSX.Element {
     return (
