@@ -7,22 +7,19 @@
   justify-content: flex-end;
 
   width: 100%;
-  height: 3.5rem;
 
   background-color: #ffffff;
 
   @include sm {
     flex-direction: column;
     justify-content: center;
-
-    height: auto;
   }
 
   #navigation-toggle {
     display: none;
     justify-content: center;
 
-    padding: 0.5rem;
+    padding: 1rem 0;
 
     color: #2b303b;
 
@@ -64,8 +61,9 @@
   }
 
   #navigation-vertical {
-    display: none;
     flex-direction: column;
+
+    overflow: auto;
 
     background-color: #eeeeee;
 

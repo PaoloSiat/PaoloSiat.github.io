@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Profile, Contact, Footer, Header, NavigationBar, Portfolio, WorkExperience } from './components'
+import { AboutMe, Contact, Footer, Header, NavigationBar, Portfolio, WorkExperience } from './components'
 
 // Import the contents of the css files.
 import 'semantic-ui-css/semantic.min.css'
@@ -13,7 +13,7 @@ ReactDOM.render(
     <NavigationBar />
     <div id='content'>
       <Header />
-      <Profile />
+      <AboutMe />
       <Portfolio />
       <WorkExperience />
       <Contact />

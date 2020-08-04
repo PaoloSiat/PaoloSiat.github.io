@@ -42,8 +42,14 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
     this.setState({ visible: !this.state.visible }, () => {
       let workExperienceContent = document.getElementById('work-experience-content');
 
-      if (workExperienceContent && this.state.visible) workExperienceContent.style.display = 'block';
-      else if (workExperienceContent) workExperienceContent.style.display = 'none';
+      if (workExperienceContent && this.state.visible)
+      {
+        workExperienceContent.style.display = 'block';
+      }
+      else if (workExperienceContent)
+      {
+        workExperienceContent.style.display = 'none';
+      }
     });
   }
 

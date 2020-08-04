@@ -1,5 +1,9 @@
+@import 'mixins.scss';
+
+
 #contact {
   display: flex;
+  flex-direction: row;
 
   margin: 0 auto;
   padding: 1.5rem 0;
@@ -7,6 +11,10 @@
   width: 90vw;
 
   background-color: #BFD56B;
+
+  @include md {
+    flex-direction: column;
+  }
 
   p {
     margin-bottom: 0;
@@ -36,11 +44,9 @@
     margin-bottom: 1rem;
 
     p {
-      flex-grow: 0.5;
-
       margin: 0 0 0.5rem 0;
       
-      width: 3rem;
+      width: 7rem;
 
       font-size: 1.2rem;
     }
@@ -54,7 +60,6 @@
     flex-grow: 4;
     resize: none;
 
-    margin: 0 0 0 1rem;
     padding: 5px 0;
 
     border: none;
@@ -89,7 +94,6 @@
 
   #contact-information {
     width: 100%;
-    max-width: 50%;
 
     font-size: 1.2rem;
   }
@@ -97,6 +101,10 @@
   #contact-form {
     width: 100%;
     max-width: 40rem;
+
+    @include md {
+      margin-top: 1rem;
+    }
   }
 
   input[type="submit"] {
@@ -124,6 +132,21 @@
     &:hover {
       color: #23272b;
       background-color: #feb312;
+    }
+  }
+}
+
+@media (hover: none) {
+  input[type="submit"] {
+    color: #ffffff !important;
+    background: #2b303b !important;
+  }
+
+  #social-media-icons {
+    a {
+      i {
+        color: #23272b !important;
+      }
     }
   }
 }

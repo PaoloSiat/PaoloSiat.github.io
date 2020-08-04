@@ -7,7 +7,7 @@
 
   background: url(../images/villain.png) no-repeat center fixed;
   background-color: #167171;
-  position: relative;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,7 +17,7 @@
   &:hover {
     background: url(../images/villainx.png) no-repeat center fixed;
     background-color: #167171;
-    position: relative;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

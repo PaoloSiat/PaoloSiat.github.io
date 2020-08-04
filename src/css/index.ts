@@ -1,7 +1,7 @@
 // Exported files for easier access.
 import './index.scss';
 
-import './bio.scss';
+import './aboutMe.scss';
 import './contact.scss';
 import './footer.scss';
 import './header.scss';

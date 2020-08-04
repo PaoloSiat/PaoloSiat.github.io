@@ -1,5 +1,5 @@
 // Exported classes for easier access.
-export { default as Profile } from './profile';
+export { default as AboutMe } from './aboutMe';
 export { default as Contact } from './contact';
 export { default as Footer } from './footer';
 export { default as Header } from './header';

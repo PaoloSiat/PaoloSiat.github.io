@@ -34,15 +34,15 @@ export default class NavigationBar extends Component<NavigationBarProps, Navigat
   render(): JSX.Element {
     return (
       <div id='navigation-bar' className='unselectable'>
-        <div id='navigation-toggle' onClick={() => this.toggleVerticalNavigation()}><i className="fa fa-bars" aria-hidden="true"></i></div>
+        <div id='navigation-toggle' onClick={() => this.toggleVerticalNavigation()}>≡</div>
         <ul id='navigation-horizontal'>
-          <li onClick={() => scrollToContentChild('profile')}>PROFILE</li>
+          <li onClick={() => scrollToContentChild('about-me')}>ABOUT ME</li>
           <li onClick={() => scrollToContentChild('portfolio')}>PORTFOLIO</li>
           <li onClick={() => scrollToContentChild('work-experience')}>WORK EXPERIENCE</li>
           <li onClick={() => scrollToContentChild('contact')}>CONTACT</li>
         </ul>
-        <ul id='navigation-vertical'>
-          <li onClick={() => scrollToContentChild('profile')}>PROFILE</li>
+        <ul id='navigation-vertical' style={{ display: 'none' }}>
+          <li onClick={() => scrollToContentChild('about-me')}>ABOUT ME</li>
           <li onClick={() => scrollToContentChild('portfolio')}>PORTFOLIO</li>
           <li onClick={() => scrollToContentChild('work-experience')}>WORK EXPERIENCE</li>
           <li onClick={() => scrollToContentChild('contact')}>CONTACT</li>

@@ -61,7 +61,7 @@ export default class Contact extends Component<ContactProps, ContactState> {
         </div>
         <div id='contact-form'>
           <h1 className='unselectable'>SEND ME A MESSAGE!</h1>
-          <form onSubmit={this.submitForm} action="https://formspree.io/mknqvbjl" method="POST">
+          <form onSubmit={this.submitForm} action="https://formspree.io/mdowbkwd" method="POST">
             <label>
             <p className='unselectable'>Name:<abbr title='required' className='red'>* </abbr></p>
               <input type='text' id='form-name' name='form-name' tabIndex={1} />
@@ -74,7 +74,7 @@ export default class Contact extends Component<ContactProps, ContactState> {
               <p className='unselectable'>Message:<abbr title='required' className='red'>* </abbr></p>
               <textarea id='form-message' name='form-message' tabIndex={3} />
             </label>
-            {this.state.status === "SUCCESS" ? <p className='dark'><strong>Thanks!</strong></p> : <input type='submit' id='form-submit' name='form-submit' tabIndex={4} />}
+            {this.state.status === "SUCCESS" ? <p className='dark'><strong>Thanks!</strong></p> : <input type='submit' id='form-submit' name='form-submit' value="Send" tabIndex={4} />}
             {this.state.status === "ERROR" && <p className='red'><strong>Ooops! There was an error.</strong></p>}
           </form>
         </div>

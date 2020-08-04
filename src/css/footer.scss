@@ -18,8 +18,16 @@
       width: 10rem;
 
       &:hover {
+        color: #feb312;
+
         cursor: pointer;
       }
     }
+  }
+}
+
+@media (hover: none) {
+  #back-to-top {
+    color: #ffffff !important;
   }
 }

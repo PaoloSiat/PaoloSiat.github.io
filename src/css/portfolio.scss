@@ -2,72 +2,61 @@
 
 
 #portfolio {
+  margin-bottom: 0.5rem;
+
   background-color: #BFD56B;
 
-  #portfolio-selector {
-    display: flex;
-    flex-direction: column;
-
+  h1 {
     margin: 0 auto;
     padding-top: 1.5rem;
 
     width: 90vw;
 
-    h1 {
-      display: inline-block;
+    font-family: 'Staatliches', Arial, sans-serif;
+    color: #495551;
+    font-weight: 400;
+  }
 
+  .portfolio-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h2 {
       margin: 0;
+      padding: 0 0.5rem 0 0;
 
       font-family: 'Staatliches', Arial, sans-serif;
       color: #495551;
+      font-size: 2rem;
       font-weight: 400;
+      background: none;
+      border: none;
+      outline: none;
     }
 
-    #portfolio-buttons {
-      margin: 0 0 0.5rem 0;
+    div {
+      color: #495551;
+      font-size: 2.1rem;
+      background: none;
+      border: none;
+      outline: none;
 
-      button  {
-        padding: 0 0.5rem 0 0;
-  
-        font-family: 'Staatliches', Arial, sans-serif;
-        color: #495551;
-        font-size: 2rem;
-        font-weight: 400;
-        text-decoration: underline;
-        background: none;
-        border: none;
-        outline: none;
-  
-        transition: color 0.2s ease, text-decoration-color 0.2s ease;
-  
-        &:hover {
-          color: #feb312;
-          text-decoration-color: #feb312 !important;
-          
-          cursor: pointer;
-        }
+      &:hover {
+        cursor: pointer;
+
+        color: #feb312;
       }
     }
   }
 
-  #portfolio-content {
+  .portfolio-container {
     margin: 0 auto;
-    margin-bottom: 1rem;
 
     width: 90vw;
-    max-height: 70rem;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    background-color: rgba(1, 1, 1, 0.1);
-    border-top: 2px #167171 solid;
-    border-bottom: 2px #167171 solid;
 
     .portfolio-image {
-      -webkit-column-break-inside: avoid;
-      -moz-column-break-inside: avoid;
-      break-inside: avoid;
+      width: 25%;
 
       margin-bottom: 1.875em;
       padding: 0.5rem;
@@ -75,41 +64,33 @@
       background-color: #ffffff;
       border-radius: 0.5rem;
 
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-    #portfolio-container {
-      padding: 1rem;
-
-      -webkit-column-count: 4;
-      -webkit-column-gap: 1.875em;
-      -webkit-column-fill: auto;
-      -moz-column-count: 4;
-      -moz-column-gap: 1.875em;
-      -moz-column-fill: auto;
-      column-count: 4;
-      column-gap: 1.875em;
-      column-fill: auto;
-
-      margin-bottom: -1.875em;
-
-      width: 100%;
-      
-      overflow: hidden;
-
       @include lg {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
+        width: 33.3%;
       }
 
       @include md {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
+        width: 50%;
       }
+    }
+
+    .portfolio-content {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      max-height: 70rem;   
+
+      padding: 1rem;
+
+      width: 100%;
+
+      background-color: #ffffff;
+      border-top: 2px #167171 solid;
+      border-bottom: 2px #167171 solid;
+      
+      overflow-x: hidden;
+      overflow-y: auto;
     }
   }
 }
@@ -117,6 +98,12 @@
 @media (hover: none) {
   #portfolio-selector {
     button {
+      color: #495551 !important;
+    }
+  }
+
+  .portfolio-selector {
+    div {
       color: #495551 !important;
     }
   }
