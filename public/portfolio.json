@@ -2,7 +2,7 @@
   "categories": [
     {
       "name": "graphic-design",
-      "title": "GRAPHIC DESIGN",
+      "title": "Graphic Design",
       "visible": false,
       "images": [
         "1.png",
@@ -61,7 +61,7 @@
     },
     {
       "name": "illustrations",
-      "title": "ILLUSTRATIONS",
+      "title": "Illustrations",
       "visible": false,
       "images": [
         "1.jpg",
@@ -88,7 +88,7 @@
     },
     {
       "name": "traditional",
-      "title": "TRADITIONAL",
+      "title": "Traditional",
       "visible": false,
       "images": [
         "1.jpg",

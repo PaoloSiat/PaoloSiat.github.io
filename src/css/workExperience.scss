@@ -7,35 +7,48 @@
   background-color: #167171;
 
   #work-experience-toggle {
+    display: flex;
+    
+
     margin: 0 auto;
 
     width: 90vw;
 
     h1 {
-      display: inline-block;
+      //display: inline-block;
 
-      margin: 0 0 0.5rem 0;
+      //margin: 0 0 0.5rem 0;
+      margin: 0;
+      padding: 0 0.5rem 0 0;
+
+      width: 14rem;
 
       font-family: 'Staatliches', Arial, sans-serif;
       color: #ffffff;
+      font-size: 2rem;
       font-weight: 400;
+      background: none;
+      border: none;
+      outline: none;
     }
 
-    button {
-      padding: 0 0 0 0.3rem;
+    div {
+      flex-grow: 4;
+      
+      padding-top: 0.4rem;
 
       color: #ffffff;
       font-size: 2.1rem;
       background: none;
       border: none;
       outline: none;
+    }
 
-      transition: color 0.2s ease;
+    &:hover {
+      cursor: pointer;
 
-      &:hover {
+      * {
         color: #feb312;
-
-        cursor: pointer;
       }
     }
   }
@@ -81,7 +94,7 @@
 
 @media (hover: none) {
   #work-experience-toggle {
-    button {
+    * {
       color: #ffffff !important;
     }
   }

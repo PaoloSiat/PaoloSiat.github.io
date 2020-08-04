@@ -52,17 +52,17 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
           );
         }
 
-        result.push(<div key='selector' className='portfolio-selector'>
+        result.push(<div key='selector' className='portfolio-selector'  onClick={() => {
+          let element = document.getElementById(`portfolio-content-${categoryData.name}`);
+
+          if (categoryData.visible && element) element.style.display = 'none';
+          else if (element) element.style.display = 'flex'; 
+          categoryData.visible = !categoryData.visible
+
+          this.forceUpdate();
+        }}>
           <h2>{categoryData.title}</h2>
-          <div onClick={() => {
-            let element = document.getElementById(`portfolio-content-${categoryData.name}`);
-
-            if (categoryData.visible && element) element.style.display = 'none';
-            else if (element) element.style.display = 'flex'; 
-            categoryData.visible = !categoryData.visible
-
-            this.forceUpdate();
-          }}>
+          <div>
             {categoryData.visible ? '▲' : '▼'}
           </div>
         </div>);
@@ -78,7 +78,7 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
   render(): JSX.Element {
     return (
       <div id='portfolio' className='unselectable'>
-        <h1 className='unselectable'>PORTFOLIO</h1>
+        <h1 className='unselectable'>WORKS</h1>
         <div id='portfolio-graphic-design' className='portfolio-container'>
           {this.getImagesFromCategory('graphic-design')}
         </div>

@@ -57,9 +57,9 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
   render(): JSX.Element {
     return (
       <div id='work-experience'>
-        <div id='work-experience-toggle'>
+        <div id='work-experience-toggle' className='unselectable' onClick={() => this.toggleWorkExperience()}>
           <h1>WORK EXPERIENCE</h1>
-          <button className='unselectable' onClick={() => this.toggleWorkExperience()}>{this.state.visible ? '▲' : '▼'}</button>
+          <div>{this.state.visible ? '▲' : '▼'}</div>
         </div>
         <div id='work-experience-content' style={{ display: 'none' }}>
           <Markdown>{this.state.content}</Markdown>

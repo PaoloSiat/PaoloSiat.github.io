@@ -25,7 +25,7 @@ export default class AboutMe extends Component<AboutMeProps, AboutMeState> {
   render(): JSX.Element {
     return (
       <div id='about-me'>
-        <h1>ABOUT ME</h1>
+        <h1 className='unselectable'>ABOUT ME</h1>
         <p>{this.state.aboutMeText}</p>
       </div>
     );
