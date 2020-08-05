@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
+import FullscreenImage from './fullscreenImage';
 
 
 // What defines a category as being a category.
@@ -14,6 +15,7 @@ interface IPortfolioCategory {
 interface PortfolioProps {}
 interface PortfolioState {
   portfolioData: IPortfolioCategory[];
+  currentFullscreenImage: string;
 }
 
 export default class Portfolio extends Component<PortfolioProps, PortfolioState> {
@@ -23,7 +25,8 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
 
     // Set default data.
     this.state = {
-      portfolioData: []
+      portfolioData: [],
+      currentFullscreenImage: ''
     }
 
     // Grab the text content of the file and parse it in to a class variable.
@@ -32,6 +35,11 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
     .then(text => {
       this.setState({ portfolioData: JSON.parse(text).categories })
     });
+  }
+
+  // Creates a full screen image element that shows on top of the site.
+  openFullscreenImage(imagePath: string): void {
+    this.setState({ currentFullscreenImage: imagePath });
   }
 
   // This function makes it possible to create a section of HTML code that is reusable and uses the category parameter to change content.
@@ -48,7 +56,7 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
 
           // Create an image element using using the information from the data and bind a click event to it.
           images.push(
-            <Image key={path} src={path} alt={path} className='portfolio-image' fluid={true} draggable={false} onClick={() => console.log('tried to open image')} />
+            <Image key={path} src={path} alt={`portfolio image for: ${path}`} className='portfolio-image' fluid={true} draggable={false} onClick={() => this.openFullscreenImage(path)} />
           );
         }
 
@@ -71,6 +79,7 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
         result.push(<div key='images' id={`portfolio-content-${categoryData.name}`} className='portfolio-content' style={{ display: 'none' }}>{images}</div >);
       }
     }
+    
     return result;
   }
 
@@ -88,6 +97,7 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
         <div id='portfolio-traditional' className='portfolio-container'>
           {this.getImagesFromCategory('traditional')}
         </div>
+        <FullscreenImage parent={this} />
       </div>
     );
   }

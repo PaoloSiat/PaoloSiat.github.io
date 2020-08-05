@@ -19,7 +19,7 @@ export default class AboutMe extends Component<AboutMeProps, AboutMeState> {
     // Grab the text content of the file and parse it in to a class variable.
     fetch('aboutMe.txt')
     .then(data => data.text())
-    .then(text => { this.setState({ aboutMeText: text }, () => console.log(this.state.aboutMeText)) });
+    .then(text => { this.setState({ aboutMeText: text }); });
   }
 
   render(): JSX.Element {

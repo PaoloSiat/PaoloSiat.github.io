@@ -8,4 +8,5 @@ import './header.scss';
 import './navigationBar.scss';
 import './portfolio.scss';
 import './workExperience.scss';
+import './fullscreenImage.scss';
 
