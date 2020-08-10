@@ -15,6 +15,7 @@ interface IndexState {
   siteData: ISiteData;
 }
 
+// Dummy data in case loading fails.
 var siteData: string = `
 {
   "siteInformation":
@@ -165,7 +166,7 @@ fetch('site-data.json')
 .then(text => {
   siteData = text;
 
-  // Whatever gets rendered here gets rendered on the screen.
+  // Whatever gets added here gets rendered on the screen.
   ReactDOM.render(
     <Router basename={process.env.PUBLIC_URL}>
       <NavigationBar siteData={JSON.parse(siteData)} />
@@ -183,40 +184,38 @@ fetch('site-data.json')
 });
 
 // Rendering is done in HTML and returns what this class what actually look like on the screen.
-export default class Index extends Component<IndexProps, IndexState> {
-  constructor (props: IndexProps) {
-    super(props);
+// export default class Index extends Component<IndexProps, IndexState> {
+//   constructor (props: IndexProps) {
+//     super(props);
 
-    this.state = {
-      siteRawData: '',
-      siteData: JSON.parse(siteData)
-    }
+//     this.state = {
+//       siteRawData: '',
+//       siteData: JSON.parse(siteData)
+//     }
 
-    // Grab the text content of the file and parse it in to a class variable.
-    fetch('site-data.json')
-    .then(data => data.text())
-    .then(text => {
-      this.setState({ siteRawData: text, siteData: JSON.parse(text) });
-    });
-  }
+//     // Grab the text content of the file and parse it in to a class variable.
+//     fetch('site-data.json')
+//     .then(data => data.text())
+//     .then(text => {
+//       this.setState({ siteRawData: text, siteData: JSON.parse(text) });
+//     });
+//   }
 
-  componentDidMount(): void {this.forceUpdate()}
+//   componentDidMount(): void {this.forceUpdate()}
 
-  render(): JSX.Element {
-    return (
-      <div>
-        <NavigationBar siteData={this.state.siteData} />
-        <div id='content'>
-          <Header siteData={this.state.siteData} />
-          <AboutMe siteData={this.state.siteData} />
-          <Portfolio siteData={this.state.siteData} />
-          <WorkExperience siteData={this.state.siteData} />
-          <Contact siteData={this.state.siteData} />
-          <Footer siteData={this.state.siteData} />
-        </div>
-      </div>
-    );
-  }
-}
-
-
+//   render(): JSX.Element {
+//     return (
+//       <div>
+//         <NavigationBar siteData={this.state.siteData} />
+//         <div id='content'>
+//           <Header siteData={this.state.siteData} />
+//           <AboutMe siteData={this.state.siteData} />
+//           <Portfolio siteData={this.state.siteData} />
+//           <WorkExperience siteData={this.state.siteData} />
+//           <Contact siteData={this.state.siteData} />
+//           <Footer siteData={this.state.siteData} />
+//         </div>
+//       </div>
+//     );
+//   }
+// }
