@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 
 // The data that the Contact class manages.
-interface HeaderProps {}
+interface HeaderProps {
+  siteData: ISiteData;
+}
 interface HeaderState {}
 
 export default class Header extends Component<HeaderProps, HeaderState> {
@@ -11,8 +13,8 @@ export default class Header extends Component<HeaderProps, HeaderState> {
     return (
       <div id='header'>
         <div id='header-name' className='unselectable'>
-          <h1>PAOLO SIAT</h1>
-          <h2>Multimedia Artist</h2>
+          <h1>{this.props.siteData.siteInformation.headerName}</h1>
+          <h2>{this.props.siteData.siteInformation.headerJobTitle}</h2>
         </div>
       </div>
     );

@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 
 // The data that the Contact class manages.
-interface ContactProps {}
+interface ContactProps {
+  siteData: ISiteData;
+}
 interface ContactState {
   status: string;
 }
@@ -46,21 +48,21 @@ export default class Contact extends Component<ContactProps, ContactState> {
     return (
       <div id='contact'>
         <div id='contact-information'>
-          <h1>CONTACT INFORMATION</h1>
-          <p><strong>John Paolo Siat</strong><br />Multimedia Artist<br />
-            Phone: <span className='dark'>+64291269475</span><br />
-            E-mail: <span className='dark'>paolosiat@gmail.com</span></p>
+          <h1>{this.props.siteData.siteStructure.contactInformationTitle}</h1>
+          <p><strong>{this.props.siteData.siteInformation.contactFullName}</strong><br />{this.props.siteData.siteInformation.contactJobTitle}<br />
+            Phone: <span className='dark'>{this.props.siteData.siteInformation.contactPhone}</span><br />
+            E-mail: <span className='dark'>{this.props.siteData.siteInformation.contactEmail}</span></p>
           <div id='social-media-icons'>
-            <a href='https://instagram.com/billygreatestwarriorever' className='fa-layers fa-2x'rel='noopener noreferrer' target='_blank'>
+            <a href={this.props.siteData.siteInformation.socialInstagramLink} className='fa-layers fa-2x'rel='noopener noreferrer' target='_blank'>
 							<i className='fab fa-instagram'></i>
 						</a>
-            <a href='https://www.youtube.com/channel/UCWuBcvSc01LjIofiTb97I2g' className='fa-layers fa-2x' rel='noopener noreferrer' target='_blank'>
+            <a href={this.props.siteData.siteInformation.socialYoutubeLink} className='fa-layers fa-2x' rel='noopener noreferrer' target='_blank'>
 							<i className="fab fa-youtube"></i>
 						</a>
           </div>
         </div>
         <div id='contact-form'>
-          <h1 className='unselectable'>SEND ME A MESSAGE!</h1>
+          <h1 className='unselectable'>{this.props.siteData.siteStructure.contactFormTitle}</h1>
           <form onSubmit={this.submitForm} action="https://formspree.io/mdowbkwd" method="POST">
             <label>
             <p className='unselectable'>Name:<abbr title='required' className='red'>* </abbr></p>
@@ -74,7 +76,7 @@ export default class Contact extends Component<ContactProps, ContactState> {
               <p className='unselectable'>Message:<abbr title='required' className='red'>* </abbr></p>
               <textarea id='form-message' name='form-message' tabIndex={3} />
             </label>
-            {this.state.status === "SUCCESS" ? <p className='dark'><strong>Thanks!</strong></p> : <input type='submit' id='form-submit' name='form-submit' value="Send" tabIndex={4} />}
+            {this.state.status === "SUCCESS" ? <p className='dark'><strong>Thanks!</strong></p> : <input type='submit' id='form-submit' name='form-submit' value={this.props.siteData.siteStructure.contactFormSubmitText} tabIndex={4} />}
             {this.state.status === "ERROR" && <p className='red'><strong>Ooops! There was an error.</strong></p>}
           </form>
         </div>

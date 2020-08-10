@@ -1,8 +1,36 @@
 {
-  "categories": [
+  "siteInformation":
+  {
+    "headerName": "PAOLO SIAT",
+    "headerJobTitle": "Graphic Designer",
+    "copyrightMessage": "© 2020 Paolo Siat. All rights reserved",
+    "contactJobTitle": "Graphic Designer",
+    "contactFullName": "John Paolo Siat",
+    "contactPhone": "(+64)29 126 9475",
+    "contactEmail": "paolosiat@gmail.com",
+    "socialInstagramLink": "https://www.instagram.com/billygreatestwarriorever/",
+    "socialYoutubeLink": "https://www.youtube.com/channel/UCWuBcvSc01LjIofiTb97I2g",
+    "aboutMeTextFile": "aboutMe.txt",
+    "workExperienceFile": "work-experience.md"
+  },
+  "siteStructure":
+  {
+    "aboutMeTitle": "ABOUT ME",
+    "portfolioTitle": "PORTFOLIO",
+    "workExperienceTitle": "WORK EXPERIENCE",
+    "contactInformationTitle": "CONTACT INFORMATION",
+    "contactFormTitle": "SEND ME A MESSAGE!",
+    "navigationAboutMeTitle": "ABOUT ME",
+    "navigationPortfolioTitle": "PORTFOLIO",
+    "navigationWorkExperienceTitle": "WORK EXPERIENCE",
+    "navigationContactTitle": "CONTACT",
+    "backToTopText": "Back to Top",
+    "contactFormSubmitText": "Send"
+  },
+  "portfolioCategories": [
     {
       "name": "graphic-design",
-      "title": "Graphic Design",
+      "title": "GRAPHIC DESIGN",
       "visible": false,
       "images": [
         "1.png",
@@ -61,7 +89,7 @@
     },
     {
       "name": "illustrations",
-      "title": "Illustrations",
+      "title": "ILLUSTRATIONS",
       "visible": false,
       "images": [
         "1.jpg",
@@ -88,7 +116,7 @@
     },
     {
       "name": "traditional",
-      "title": "Traditional",
+      "title": "TRADITIONAL",
       "visible": false,
       "images": [
         "1.jpg",
@@ -97,6 +125,16 @@
         "4.jpg",
         "5.jpg",
         "6.jpg"
+      ]
+    },
+    {
+      "name": "others",
+      "title": "OTHERS",
+      "visible": false,
+      "images": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
       ]
     }
   ]

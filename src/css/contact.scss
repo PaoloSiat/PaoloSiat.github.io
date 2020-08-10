@@ -6,7 +6,7 @@
   flex-direction: row;
 
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 0.75rem 0 1.5rem 0;
 
   width: 90vw;
 
@@ -86,8 +86,6 @@
 
       i:hover {
         color: #feb312;
-
-        transition: color 0.2s ease-in-out;
       }
     }
   }
@@ -120,7 +118,6 @@
     line-height: 1.5;
     text-decoration: none;
 
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
     border: none;
     border-radius: 0;
 

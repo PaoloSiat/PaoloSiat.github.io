@@ -3,18 +3,11 @@ import { Image } from 'semantic-ui-react';
 import FullscreenImage from './fullscreenImage';
 
 
-// What defines a category as being a category.
-interface IPortfolioCategory {
-  name: string;
-  title: string;
-  visible: boolean;
-  images: string[];
-}
-
 // The data that the Portfolio class manages.
-interface PortfolioProps {}
+interface PortfolioProps {
+  siteData: ISiteData;
+}
 interface PortfolioState {
-  portfolioData: IPortfolioCategory[];
   currentFullscreenImage: string;
 }
 
@@ -25,16 +18,8 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
 
     // Set default data.
     this.state = {
-      portfolioData: [],
       currentFullscreenImage: ''
     }
-
-    // Grab the text content of the file and parse it in to a class variable.
-    fetch('portfolio.json')
-    .then(data => data.text())
-    .then(text => {
-      this.setState({ portfolioData: JSON.parse(text).categories })
-    });
   }
 
   // Creates a full screen image element that shows on top of the site.
@@ -48,7 +33,7 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
     let images: JSX.Element[] = [];
 
     // Loop through loaded data and match the input category name and the 
-    for (let categoryData of this.state.portfolioData) {
+    for (let categoryData of this.props.siteData.portfolioCategories) {
       if (category === categoryData.name) {
         // Loop through the images that are in the matched category to create and add them to the images list.
         for (let image of categoryData.images) {
@@ -85,18 +70,20 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
 
   // Rendering is done in HTML and returns what this class what actually look like on the screen.
   render(): JSX.Element {
+    let portfolioElements = [];
+
+    for (let categoryData of this.props.siteData.portfolioCategories) {
+      portfolioElements.push(
+        <div key={categoryData.name} id={`portfolio-${categoryData.name}`} className='portfolio-container'>
+          {this.getImagesFromCategory(categoryData.name)}
+        </div>
+      );
+    }
+
     return (
       <div id='portfolio' className='unselectable'>
-        <h1 className='unselectable'>WORKS</h1>
-        <div id='portfolio-graphic-design' className='portfolio-container'>
-          {this.getImagesFromCategory('graphic-design')}
-        </div>
-        <div id='portfolio-illustrations' className='portfolio-container'>
-          {this.getImagesFromCategory('illustrations')}
-        </div>
-        <div id='portfolio-traditional' className='portfolio-container'>
-          {this.getImagesFromCategory('traditional')}
-        </div>
+        <h1 className='unselectable'>{this.props.siteData.siteStructure.portfolioTitle}</h1>
+        {portfolioElements}
         <FullscreenImage parent={this} />
       </div>
     );

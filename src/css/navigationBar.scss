@@ -44,10 +44,8 @@
       display: none;
     }
 
-    li {
+    div {
       padding: 0.5rem;
-
-      transition: color 0.2s ease;
 
       color: #2b303b;
       text-decoration: none;
@@ -63,7 +61,7 @@
   #navigation-vertical {
     flex-direction: column;
 
-    overflow: auto;
+    //overflow: auto;
 
     background-color: #eeeeee;
 
@@ -74,8 +72,8 @@
 
 @media (hover: none) {
   #navigation-bar {
-    ul {
-      li {
+    div {
+      div {
         color: #2b303b !important;
       }
     }

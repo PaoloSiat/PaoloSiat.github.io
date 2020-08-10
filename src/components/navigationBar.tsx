@@ -3,7 +3,9 @@ import { scrollToContentChild } from '../utility';
 
 
 // The data that the Contact class manages.
-interface NavigationBarProps {}
+interface NavigationBarProps {
+  siteData: ISiteData;
+}
 interface NavigationBarState {}
 
 export default class NavigationBar extends Component<NavigationBarProps, NavigationBarState> {
@@ -35,18 +37,18 @@ export default class NavigationBar extends Component<NavigationBarProps, Navigat
     return (
       <div id='navigation-bar' className='unselectable'>
         <div id='navigation-toggle' onClick={() => this.toggleVerticalNavigation()}>≡</div>
-        <ul id='navigation-horizontal'>
-          <li onClick={() => scrollToContentChild('about-me')}>ABOUT ME</li>
-          <li onClick={() => scrollToContentChild('portfolio')}>PORTFOLIO</li>
-          <li onClick={() => scrollToContentChild('work-experience')}>WORK EXPERIENCE</li>
-          <li onClick={() => scrollToContentChild('contact')}>CONTACT</li>
-        </ul>
-        <ul id='navigation-vertical' style={{ display: 'none' }}>
-          <li onClick={() => scrollToContentChild('about-me')}>ABOUT ME</li>
-          <li onClick={() => scrollToContentChild('portfolio')}>PORTFOLIO</li>
-          <li onClick={() => scrollToContentChild('work-experience')}>WORK EXPERIENCE</li>
-          <li onClick={() => scrollToContentChild('contact')}>CONTACT</li>
-        </ul>
+        <div id='navigation-horizontal'>
+          <div onClick={() => scrollToContentChild('about-me')}>{this.props.siteData.siteStructure.navigationAboutMeTitle}</div>
+          <div onClick={() => scrollToContentChild('portfolio')}>{this.props.siteData.siteStructure.navigationPortfolioTitle}</div>
+          <div onClick={() => scrollToContentChild('work-experience')}>{this.props.siteData.siteStructure.navigationWorkExperienceTitle}</div>
+          <div onClick={() => scrollToContentChild('contact')}>{this.props.siteData.siteStructure.navigationContactTitle}</div>
+        </div>
+        <div id='navigation-vertical' style={{ display: 'none' }}>
+          <div onClick={() => scrollToContentChild('about-me')}>{this.props.siteData.siteStructure.navigationAboutMeTitle}</div>
+          <div onClick={() => scrollToContentChild('portfolio')}>{this.props.siteData.siteStructure.navigationPortfolioTitle}</div>
+          <div onClick={() => scrollToContentChild('work-experience')}>{this.props.siteData.siteStructure.navigationWorkExperienceTitle}</div>
+          <div onClick={() => scrollToContentChild('contact')}>{this.props.siteData.siteStructure.navigationContactTitle}</div>
+        </div>
       </div>
     );
   }

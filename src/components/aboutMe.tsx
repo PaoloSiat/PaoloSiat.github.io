@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 
 // The data that the Portfolio class manages.
-interface AboutMeProps {}
+interface AboutMeProps {
+  siteData: ISiteData;
+}
 interface AboutMeState {
   aboutMeText: string;
 }
@@ -17,7 +19,7 @@ export default class AboutMe extends Component<AboutMeProps, AboutMeState> {
     }
 
     // Grab the text content of the file and parse it in to a class variable.
-    fetch('aboutMe.txt')
+    fetch(this.props.siteData.siteInformation.aboutMeTextFile)
     .then(data => data.text())
     .then(text => { this.setState({ aboutMeText: text }); });
   }
@@ -25,7 +27,7 @@ export default class AboutMe extends Component<AboutMeProps, AboutMeState> {
   render(): JSX.Element {
     return (
       <div id='about-me'>
-        <h1 className='unselectable'>ABOUT ME</h1>
+        <h1 className='unselectable'>{this.props.siteData.siteStructure.aboutMeTitle}</h1>
         <p>{this.state.aboutMeText}</p>
       </div>
     );

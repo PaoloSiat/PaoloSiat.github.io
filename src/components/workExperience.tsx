@@ -3,7 +3,9 @@ import Markdown from 'markdown-to-jsx';
 
 
 // The data that the Portfolio class manages.
-interface WorkExperienceProps {}
+interface WorkExperienceProps {
+  siteData: ISiteData;
+}
 interface WorkExperienceState {
   visible: boolean;
   content: string;
@@ -32,7 +34,7 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
     }
 
     // Load the file and set the content variable to contain that data.
-    loadFile('work-experience.md').then(data => {
+    loadFile(this.props.siteData.siteInformation.workExperienceFile).then(data => {
       this.setState({ content: data });
     });
   }
@@ -56,9 +58,9 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
   // Rendering is done in HTML and returns what this class what actually look like on the screen.
   render(): JSX.Element {
     return (
-      <div id='work-experience'>
+      <div id='work-experience' className={this.state.visible ? 'work-experience-opened' : ''}>
         <div id='work-experience-toggle' className='unselectable' onClick={() => this.toggleWorkExperience()}>
-          <h1>WORK EXPERIENCE</h1>
+          <h1>{this.props.siteData.siteStructure.workExperienceTitle}</h1>
           <div>{this.state.visible ? '▲' : '▼'}</div>
         </div>
         <div id='work-experience-content' style={{ display: 'none' }}>

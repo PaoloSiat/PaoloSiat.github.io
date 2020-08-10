@@ -3,7 +3,9 @@ import { scrollToContentLocation } from '../utility';
 
 
 // The data that the Contact class manages.
-interface FooterProps {}
+interface FooterProps {
+  siteData: ISiteData;
+}
 interface FooterState {}
 
 export default class Footer extends Component<FooterProps, FooterState> {
@@ -12,8 +14,8 @@ export default class Footer extends Component<FooterProps, FooterState> {
     return (
       <div id='footer' className='unselectable'>
         <div>
-          <div>© 2020 Paolo Siat. All rights reserved</div>
-          <div id='back-to-top' onClick={() => scrollToContentLocation(0, 0)}>▲ Back to Top</div>
+          <div>{this.props.siteData.siteInformation.copyrightMessage}</div>
+          <div id='back-to-top' onClick={() => scrollToContentLocation(0, 0)}>▲ {this.props.siteData.siteStructure.backToTopText}</div>
         </div>
       </div>
     );

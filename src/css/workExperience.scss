@@ -1,18 +1,33 @@
 @import 'mixins.scss';
 
 
-#work-experience {
-  padding: 1.5rem 0;
+.work-experience-opened {
+  padding-bottom: 0.75rem !important;
 
   background-color: #167171;
+
+  color: #ffffff;
+
+  h1 {
+    color: #ffffff;
+  }
+
+  div {
+    color: #ffffff;
+  }
+}
+
+#work-experience {
+  padding: 0.75rem 0 0 0;
 
   #work-experience-toggle {
     display: flex;
     
-
     margin: 0 auto;
 
     width: 90vw;
+
+    color: #495551;
 
     h1 {
       //display: inline-block;
@@ -24,7 +39,7 @@
       width: 14rem;
 
       font-family: 'Staatliches', Arial, sans-serif;
-      color: #ffffff;
+      //color: #2b303b;
       font-size: 2rem;
       font-weight: 400;
       background: none;
@@ -37,7 +52,7 @@
       
       padding-top: 0.5rem;
 
-      color: #ffffff;
+      //color: #ffffff;
       font-size: 1.5rem;
       background: none;
       border: none;
@@ -100,7 +115,14 @@
 @media (hover: none) {
   #work-experience-toggle {
     * {
+      color: #495551 !important;
+    }
+  }
+
+  .work-experience-opened {
+    * {
       color: #ffffff !important;
     }
   }
+  
 }
