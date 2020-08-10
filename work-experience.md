@@ -41,7 +41,7 @@ Company representative for company exhibits and expos in different countries.
 
 (Georgia, Japan, Indonesia, Iran, Pakistan, Malaysia)
 
-#### **Graphic Designer Lead**
+#### **Graphic Design Lead**
 
 **Composed/edited various graphic designs needed by the company**
 
