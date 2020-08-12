@@ -60,8 +60,8 @@ export default class WorkExperience extends Component<WorkExperienceProps, WorkE
     return (
       <div id='work-experience' className={this.state.visible ? 'work-experience-opened' : ''}>
         <div id='work-experience-toggle' className='unselectable' onClick={() => this.toggleWorkExperience()}>
-          <h1>{this.props.siteData.siteStructure.workExperienceTitle}</h1>
-          <div>{this.state.visible ? '▲' : '▼'}</div>
+          <h1 className={this.state.visible ? 'work-experience-opened-text' : ''}>{this.props.siteData.siteStructure.workExperienceTitle}</h1>
+          <div className={this.state.visible ? 'work-experience-opened-text' : ''}>{this.state.visible ? '▲' : '▼'}</div>
         </div>
         <div id='work-experience-content' style={{ display: 'none' }}>
           <Markdown>{this.state.content}</Markdown>

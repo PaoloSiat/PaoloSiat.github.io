@@ -5,16 +5,10 @@
   padding-bottom: 0.75rem !important;
 
   background-color: #167171;
+}
 
-  color: #ffffff;
-
-  h1 {
-    color: #ffffff;
-  }
-
-  div {
-    color: #ffffff;
-  }
+.work-experience-opened-text {
+  color: #ffffff !important;
 }
 
 #work-experience {
@@ -117,10 +111,8 @@
     * {
       color: #495551 !important;
     }
-  }
 
-  .work-experience-opened {
-    * {
+    .work-experience-opened-text {
       color: #ffffff !important;
     }
   }
