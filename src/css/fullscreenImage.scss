@@ -13,15 +13,35 @@
   height: 100%;
   
   background-color: rgba(0,0,0,0.8);
-  
-  cursor: pointer;
 
   img {
     //display: none;
     //position: relative;
 
-    width: auto;
-    max-height: 100%;
+    max-width: 70%;
+    height: auto;
+  }
+
+  .fullscreen-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem;
+
+    width: 100%;
+    height: 90%;
+    min-width: 15%;
+
+    //background-color: red;
+
+    font-size: 3rem;
+
+    &:hover {
+      color: #feb312;
+
+      cursor: pointer;
+    }
   }
 
   #fullscreen-close {
@@ -37,12 +57,18 @@
 
     &:hover {
       color: #feb312;
+
+      cursor: pointer;
     }
   }
 }
 
 @media (hover: none) {
   #fullscreen-close {
+    color: #ffffff !important;
+  }
+
+  .fullscreen-arrow {
     color: #ffffff !important;
   }
 }
