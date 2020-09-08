@@ -27,7 +27,7 @@ Produced Logos, posters, flyers, business cards, website and app design.
 
 (explore.ara.ac.nz)
 
-### PUBLIC RELATIONS OFFICER
+### SENIOR GRAPHIC DESIGNER
 
 **International Container Terminal Services Inc. - Phillippines**
 
@@ -35,17 +35,16 @@ November 2014 - July 2019
 
 #### **Public Relations Officer**
 
-Responsible for maintaining the company’s image through different forms of media.
+Responsible in maintaining the company’s image through different forms of media.
+Company representative for exhibits and expos in different countries.
 
-Company representative for company exhibits and expos in different countries.
-
-(Georgia, Japan, Indonesia, Iran, Pakistan, Malaysia)
-
-#### **Graphic Design Lead**
+#### **Senior Graphic Designer**
 
 **Composed/edited various graphic designs needed by the company**
 
-(brochures, logos, posters, photo manipulation, rendered 3d structures, giveaways, infographics, website design, etc.)
+Designed and edited various graphic designs as needed by the company (brochures, logos,
+posters, photo manipulation, rendered 3-D structures, giveaways, infographics, website
+design, etc.). Coordinated with suppliers/vendors as needed for the project.
 
 #### **Photographer**
 
