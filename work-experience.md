@@ -33,11 +33,6 @@ Produced Logos, posters, flyers, business cards, website and app design.
 
 November 2014 - July 2019
 
-#### **Public Relations Officer**
-
-Responsible in maintaining the company’s image through different forms of media.
-Company representative for exhibits and expos in different countries.
-
 #### **Senior Graphic Designer**
 
 **Composed/edited various graphic designs needed by the company**
@@ -45,6 +40,11 @@ Company representative for exhibits and expos in different countries.
 Designed and edited various graphic designs as needed by the company (brochures, logos,
 posters, photo manipulation, rendered 3-D structures, giveaways, infographics, website
 design, etc.). Coordinated with suppliers/vendors as needed for the project.
+
+#### **Public Relations Officer**
+
+Responsible in maintaining the company’s image through different forms of media.
+Company representative for exhibits and expos in different countries.
 
 #### **Photographer**
 
