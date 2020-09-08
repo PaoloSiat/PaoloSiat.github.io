@@ -76,7 +76,7 @@ Created, modified, and released 2D and 3D drawings under the direct supervision 
 
 ### OPERATIONS MANAGER
 
-**Erehwon Artworld Corporation - Phillippines**
+**Erehwon Art Center - Phillippines**
 
 June 2012 - February 2013
 
